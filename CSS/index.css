@@ -110,6 +110,15 @@ header .header-right {
     padding-right: 100px;
 }
 
+.header-right button{
+    background-color: rgb(158,28,63);
+    border: 1px solid rgb(158,28,63);
+}
+
+header .header-right button:hover {
+    background-color: rgb(158,28,63);
+    border: 1px solid rgb(158,28,63);
+}
 
 #name {
     padding-top: 10px;
@@ -119,6 +128,56 @@ header .header-right {
 
 
 /**********************************************************************************************************/
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #616060;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+/* .sidenav a:hover {
+    color: #f1f1f1;
+} */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+.sidenav a {
+    font-size: 20px;
+}
+
+/* .sidenav {
+    border: 2px solid rgb(158,28,63);
+} */
+
+
 
 .btn {
     padding: 10px;
@@ -496,6 +555,10 @@ header .header-right {
         margin-left: 25px;
     }
 
+    .sidenav a {
+        font-size: 16px;
+    }
+
     .rows {
         width: 95%;
         padding-left: 5px;
@@ -661,12 +724,35 @@ header .header-right {
 
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .sidebar {
         margin-left: -20px;
-    }
+    } 
 
     .btn3 {
         display: none;
+    } 
+} */
+
+/* @media screen and (max-width: 1024px) {
+    body {
+      background-color: blue;
     }
-}
+
+    .sidebar {
+        margin-right: 10px;
+    }
+} */
+
+/* @media screen and  (max-width: 1024px) and (min-width){
+    
+} */
+
+
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

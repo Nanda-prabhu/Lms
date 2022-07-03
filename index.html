@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- <meta name="viewport" content="width=1000; user-scalable=0;" /> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="CSS/index.css">
     <title>LMS</title>
@@ -19,17 +20,49 @@
 <header class="header" id="myHeader">
         <div class="header-inner">
             <div class="ham">
-                <img src="Images/Hamburger_icon_white.svg.png" alt="|||">
+                <!-- <img src="Images/Hamburger_icon_white.svg.png" alt="|||"> -->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Grade</a>
+                    <a class="dropdown-item" href="#">Messages</a>
+                    <a class="dropdown-item" href="#">Preference</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+                </div>
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                 </span>
 
             </div> 
+
+            <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span> -->
     
-            <div class="header-right">
-                <!-- <i class="fa fa-bell">  </i> -->
+            <!-- <div class="header-right">
+                <i class="fa fa-bell">  </i>
                 <img src="Images/bell-bro-4.png" alt="" id="bell" class="bell">
                 <p class="notosans" id="name">NANDA PRABHU B</p>
                 <img src="Images/user-icon.png" alt="" id="user">
                 <i class="fa fa-sort-down" id="down-arrow"></i>
-            </div>
+            </div> -->
+
+            <div class="header-right">
+                <img src="Images/bell-bro-4.png" alt="" id="bell" class="bell">
+
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                NANDA PRABHU B
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Grade</a>
+                    <a class="dropdown-item" href="#">Messages</a>
+                    <a class="dropdown-item" href="#">Preference</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+
+
+                </div>
+              </div>
 
         </div>
 
@@ -45,7 +78,7 @@
 </div> -->
 
 
-    
+
 
 <section>
     <div class="rows">
@@ -369,10 +402,26 @@
         //     header.classList.remove("sticky");
         //   }
         }
-            </script>
+    </script>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+    
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>

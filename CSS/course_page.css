@@ -58,9 +58,10 @@ html {
 }
 
 header img {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
+    margin-top: 10px;
     
 } 
 
@@ -97,6 +98,16 @@ header .header-right {
     padding-right: 100px;
 }
 
+.header-right button{
+    background-color: rgb(158,28,63);
+    border: 1px solid rgb(158,28,63);
+}
+
+header .header-right button:hover {
+    background-color: rgb(158,28,63);
+    border: 1px solid rgb(158,28,63);
+}
+
 
 #name {
     padding-top: 10px;
@@ -106,6 +117,55 @@ header .header-right {
 
 
 /**********************************************************************************************************/
+
+.ignored {
+    float: right;
+    padding-right: 5px;
+    /* display: none; */
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #616060;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+/* .sidenav a:hover {
+    color: #f1f1f1;
+} */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+.sidenav a {
+    font-size: 20px;
+}
+
 
 .wrapper {
     margin-top: 75px;
@@ -149,7 +209,7 @@ header .header-right {
     line-height: 24px;
     padding-left: 15px;
     color: gray;
-    padding: 8px;
+    /* padding: 8px; */
     padding-left: 35px;
 }
 
@@ -173,6 +233,7 @@ header .header-right {
     color: #c02424;
     font-family: 'Arvo', serif;
     font-weight: 200;
+    font-size: 20px;
 }
 
 .main-content a {
@@ -347,8 +408,13 @@ background-color: #c02424; */
 
     html{
         font-size: 90%;
+        /* width: 100%; */
+    }
+    
+    .wrapper {
         width: 100%;
-    }  
+        margin-top: 30px;
+    }
 
     .ham {
         margin-left: 25px;
@@ -363,8 +429,14 @@ background-color: #c02424; */
     }
 
     .main-top {
-        width: 90%;
+        /* width: 100%; */
+        /* display: none; */
+        margin-top: 50px;
+        width: 95%;
     }
+    /* header .header-right {
+        display: none; 
+    } */
 
     .main-top h1 {
         font-size: 22px;
@@ -372,8 +444,36 @@ background-color: #c02424; */
 
     .main-content {
         width: 95%;
+        padding: 0px;
+        margin-top: 20px;
     }
 
+    .main-content h1 {
+        margin-left: 10px;
+    }
+
+    /* p .ignored {
+        display: none;
+        float: left;
+    } */
+
+    .bluebox {
+        width: 90%;
+        margin-left: 20px;
+        padding-right: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    /* .ignored {
+        display: none;
+    } */
+ 
+    /* .bluebox {
+        width: 90%;
+        padding: 10px;
+
+    } */
 
     .ftr {
         width: 100%;
@@ -406,4 +506,19 @@ background-color: #c02424; */
         display: flex;
         justify-content: center;
     }
+
+    
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+  @media (min-width: 640px) { 
+    body {
+        font-size: 2rem;
+    } 
 }
