@@ -25,13 +25,27 @@ html {
 /***********************************/
 
 .header {
-    /* padding: 10px 16px; */
+    /* padding: 10px 16px;
     background-color: rgb(158, 28, 63);                                                                                                                                                                       
     color: #f1f1f1;
     display: flex;
     justify-content: center;
+    padding: 10px 100px !important; 
+    padding: 10px; */
+
+    /* padding: 10px 16px; */
+    background-color: rgb(158, 28, 63);                                                                                                                                                                       
+    color: #f1f1f1;
+    /* display: flex;
+    justify-content: center; */
     /* padding: 10px 100px !important; */
     padding: 10px;
+
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    margin-top: 0px;
 }
 
 .header-inner {
@@ -58,10 +72,10 @@ html {
 }
 
 header img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    margin-top: 10px;
+    margin-top: 14px;
     
 } 
 
@@ -112,6 +126,10 @@ header .header-right button:hover {
 #name {
     padding-top: 10px;
     font-size: 15px;
+}
+
+.ham {
+    margin-left: 100px;
 }
 
 
@@ -248,9 +266,14 @@ header .header-right button:hover {
     color: #257095;
     background-color: rgb(206, 230, 250);
     border-radius: 5px;
+    padding: 10px;
     margin-top: 5px;
-    margin-bottom: 10px ;
+    margin-bottom: 25px;
     font-size: 13.5px;
+}
+
+.bluebox p {
+    margin-bottom: 0px;
 }
 
 
@@ -465,6 +488,10 @@ background-color: #c02424; */
         padding-bottom: 5px;
     }
 
+    .div-sub-mail {
+        font-size: 12px;
+    }
+
     /* .ignored {
         display: none;
     } */
@@ -521,4 +548,11 @@ background-color: #c02424; */
     body {
         font-size: 2rem;
     } 
+}
+
+
+.header-right .dropdown-toggle {
+    background-color: rgb(158,28,63) !important;
+    box-shadow: none !important;
+    border-color: rgb(158,28,63) !important;
 }
